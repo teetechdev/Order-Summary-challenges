@@ -1,0 +1,138 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 450px;
+  /* min-width: 450px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.body-header-text {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+.body-text {
+  padding: 0 70px 0 70px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  margin: 20px 40px 0 40px;
+  padding: 10px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.plan .plan-price {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 20px;
+}
+
+.plan-price p:first-child {
+  font-weight: bold;
+}
+
+.plan-price p:last-child {
+  color: hsl(224, 23%, 55%);
+} 
+.plan a {
+  transition: color 0.2s ease;
+  color: hsl(223, 47%, 23%);
+}
+.plan a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+.button-group {
+  margin: 20px 40px 0 40px;
+}
+
+.button-group a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.button-group a:first-child {
+  font-size: 16px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border: none;
+  padding: 15px 0;
+  border-radius: 15px;
+  transition: background-color 0.2s ease;
+  box-shadow: 0px 20px 24px 1px hsl(225, 100%, 94%);
+}
+
+.button-group a:first-child:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.button-group a:last-child {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  border: none;
+  padding: 15px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease;
+}
+.button-group a:last-child:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+    background: url(../images/pattern-background-mobile.svg);
+  }
+
+  .container {
+    max-width: 85%;
+  } 
+
+  .body-header-text {
+    font-size: 22px;
+  }
+
+  .button-group a:first-child, 
+  .button-group a:last-child {
+    font-size: 14px;
+  }
+
+  
+}
