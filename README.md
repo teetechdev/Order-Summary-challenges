@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://teetechdev.github.io/Order-Summary-challenges/)
+- Live Site URL: [Order_Summary](https://teetechdev.github.io/Order-Summary-challenges/)
 
 ## My process
 
